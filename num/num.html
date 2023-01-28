@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Coding By mr.aashu - youtube.com/mr.aashu -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Answer</title>
+  <link rel="stylesheet" href="num.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+  
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <header>Enter Your Answer🙈</header>
+    <div>
+      
+      <div class="field password">
+        <div class="input-area">
+          <input type="text"  placeholder="Enter Your Answer" id="inputNumber">
+        </div>
+       
+      </div>
+      <button onclick="calculate()">submit</button>
+      
+      <p id="result"></p>
+    </div>
+    
+  </div>
+  
+
+
+  <script>
+    
+    
+function calculate() {
+    
+    // Get the user input value
+    var inputValue = document.getElementById("inputNumber").value;
+    
+    // Add 5 to the input value
+    var sum = parseInt(inputValue) + 5;
+    
+    var x = Math.floor(sum / 10);
+        var y = sum % 10;
+        if (x > 0) {
+          document.getElementById("result").innerHTML = "Number of son = " + x + "<br> Number of daughter =" + y;
+        } else {
+          document.getElementById("result").innerHTML = "Number of Daughter = " + y;
+        }
+  }
+  
+</script>
+
+  
+</body>
+</html>
